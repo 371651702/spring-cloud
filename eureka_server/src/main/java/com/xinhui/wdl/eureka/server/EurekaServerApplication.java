@@ -1,19 +1,19 @@
-package com.xinhui.wdl.memberclient;
+package com.xinhui.wdl.eureka.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * @author dongliang.wang
  * @createTime 2019/6/28
  **/
 @SpringBootApplication
-@EnableEurekaClient
-public class MemberClientApplication {
+@EnableEurekaServer
+public class EurekaServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MemberClientApplication.class, args);
+        SpringApplication.run(EurekaServerApplication.class, args);
     }
 
 }

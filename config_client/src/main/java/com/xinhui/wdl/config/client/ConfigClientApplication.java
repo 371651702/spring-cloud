@@ -1,4 +1,4 @@
-package com.xinhui.wdl.config_client;
+package com.xinhui.wdl.config.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

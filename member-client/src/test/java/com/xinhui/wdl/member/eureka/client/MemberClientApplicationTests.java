@@ -1,4 +1,4 @@
-package com.xinhui.wdl.eureka_server;
+package com.xinhui.wdl.member.eureka.client;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class EurekaServerApplicationTests {
+public class MemberClientApplicationTests {
 
     @Test
     public void contextLoads() {

@@ -1,4 +1,4 @@
-package com.xinhui.wdl.config_server;
+package com.xinhui.wdl.config.server;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

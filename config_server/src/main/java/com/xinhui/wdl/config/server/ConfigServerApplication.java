@@ -1,19 +1,21 @@
-package com.xinhui.wdl.eureka_server;
+package com.xinhui.wdl.config.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
+ * 如果是@EnableEurekaClient,注册不到eureka上
  * @author dongliang.wang
  * @createTime 2019/6/28
  **/
 @SpringBootApplication
-@EnableEurekaServer
-public class EurekaServerApplication {
+@EnableConfigServer
+public class ConfigServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaServerApplication.class, args);
+        SpringApplication.run(ConfigServerApplication.class, args);
     }
 
 }

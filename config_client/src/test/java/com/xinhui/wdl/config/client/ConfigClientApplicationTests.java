@@ -1,4 +1,4 @@
-package com.xinhui.wdl.config_client;
+package com.xinhui.wdl.config.client;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
