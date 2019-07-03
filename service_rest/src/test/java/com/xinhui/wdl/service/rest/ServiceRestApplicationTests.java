@@ -1,4 +1,4 @@
-package com.xinhui.wdl.order.eureka.client;
+package com.xinhui.wdl.service.rest;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class OrderClientApplicationTests {
+public class ServiceRestApplicationTests {
 
     @Test
     public void contextLoads() {

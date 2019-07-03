@@ -1,4 +1,4 @@
-package com.xinhui.wdl.order.eureka.client;
+package com.xinhui.wdl.service.rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,21 +9,22 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 /**
+ * EnableDiscoveryClient注解是基于spring-cloud-commons依赖，并且在classpath中实现；
+ * EnableEurekaClient注解是基于spring-cloud-netflix依赖，只能为eureka作用；
  * @author dongliang.wang
  * @createTime 2019/6/28
  **/
 @SpringBootApplication
-@EnableEurekaClient
 @EnableDiscoveryClient
-public class OrderClientApplication {
+public class ServiceRestApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OrderClientApplication.class, args);
+        SpringApplication.run(ServiceRestApplication.class, args);
     }
 
     @Bean
     @LoadBalanced
-    RestTemplate restTemplate(){
+    public RestTemplate restTemplate(){
         return new RestTemplate();
     }
 }

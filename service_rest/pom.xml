@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.xinhui.wdl</groupId>
-    <artifactId>order_client</artifactId>
+    <artifactId>service_rest</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>order_client</name>
-    <description>Demo project for Spring Boot</description>
+    <name>service_rest</name>
+    <description>service_rest project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -27,6 +27,10 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
         </dependency>
 
         <dependency>
