@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.xinhui.wdl</groupId>
-    <artifactId>service_rest</artifactId>
+    <artifactId>service_zuul</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>service_rest</name>
-    <description>service_rest project for Spring Boot</description>
+    <name>service_zuul</name>
+    <description>service_zuul project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -30,11 +30,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
 
         <dependency>
