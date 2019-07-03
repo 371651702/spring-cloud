@@ -1,4 +1,4 @@
-# spring-cloud
+# spring-cloud  https://www.fangzhipeng.com/spring-cloud.html
 1.一个服务注册中心，eureka_server,端口为8101
 2.member-client工程跑了两个实例，端口分别为8102,8103，分别向服务注册中心注册
 3.order-client端口为8104,向服务注册中心注册,并进行ribbon配置当order-client通过restTemplate调用member-client的hi接口时，
