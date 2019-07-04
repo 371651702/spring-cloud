@@ -20,4 +20,5 @@ public class RemoteObtainController {
     public String getRemoteData(){
         return hello;
     }
+
 }
