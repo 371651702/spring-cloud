@@ -15,6 +15,9 @@ public interface FeignService {
      * Spring cloud有两种服务调用方式，一种是ribbon+restTemplate，另一种是feign
      * 本实例是feign方式实现的
      * 调用远程eureka-client服务上hi方法
+     *
+     * GetMapping("/hi")调用客户端的配置
+     *
      * @param name 调用时传递的参数
      * @return 远程服务的端口
      */
