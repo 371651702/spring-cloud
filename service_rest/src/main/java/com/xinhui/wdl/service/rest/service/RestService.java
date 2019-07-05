@@ -17,6 +17,12 @@ public class RestService {
         this.restTemplate = restTemplate;
     }
 
+    /**
+     * Spring cloud有两种服务调用方式，一种是ribbon+restTemplate，另一种是feign
+     * 本案例是ribbon+restTemplate方式实现
+     * @param name
+     * @return
+     */
     @HystrixCommand(fallbackMethod = "hiError")
     public String getServiceName(String name){
         return restTemplate.getForObject("http://eureka-client/hi?name=" + name,String.class);
