@@ -11,8 +11,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @createTime 2019/6/28
  **/
 @SpringBootApplication
-//@EnableEurekaClient
-@EnableDiscoveryClient
+@EnableEurekaClient
 public class ConfigClientApplication {
 
     public static void main(String[] args) {
