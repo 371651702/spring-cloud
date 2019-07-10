@@ -28,7 +28,7 @@ public class ServiceTurbineApplication {
 		HystrixMetricsStreamServlet streamServlet = new HystrixMetricsStreamServlet();
 		ServletRegistrationBean<HystrixMetricsStreamServlet> registrationBean = new ServletRegistrationBean<>(streamServlet);
 		registrationBean.setLoadOnStartup(1);
-		registrationBean.addUrlMappings("/hystrix.stream");
+		registrationBean.addUrlMappings("/turbine.stream");
 		registrationBean.setName("HystrixMetricsStreamServlet");
 		return registrationBean;
 	}
