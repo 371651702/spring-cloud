@@ -27,7 +27,7 @@ public class ZipkinController {
 
     @GetMapping("/in")
     public String info(){
-        log.info("hi is being called");
+        log.info("hi is being called");FactoryBean
         return "hi i'm miya!";
     }
 }

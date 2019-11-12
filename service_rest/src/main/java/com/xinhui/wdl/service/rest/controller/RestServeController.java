@@ -20,7 +20,7 @@ public class RestServeController {
 
     @GetMapping("/rest")
     public String getRemoteServeMessage(@RequestParam String name){
-
+        System.out.println("zull调用");
         return restService.getServiceName(name);
     }
 }

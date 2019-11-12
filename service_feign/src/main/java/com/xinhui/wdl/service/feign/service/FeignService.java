@@ -16,7 +16,7 @@ public interface FeignService {
      * 本实例是feign方式实现的
      * 调用远程eureka-client服务上hi方法
      *
-     * GetMapping("/hi")调用客户端的配置
+     * GetMapping("/hi")调用eureka_client客户端的GetMapping("/hi")
      *
      * @param name 调用时传递的参数
      * @return 远程服务的端口
